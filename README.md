@@ -1,6 +1,8 @@
 # manhattan
 Atomic react elements for styling and quick prototyping. This is probably a terrible idea.
 
+[![Build Status](https://travis-ci.org/kdoh/manhattan.svg?branch=master)](https://travis-ci.org/kdoh/manhattan)
+
 ## install
 ```sh
 $ npm i react-manhattan

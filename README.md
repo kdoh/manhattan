@@ -82,6 +82,7 @@ a quick atomic classnames example:
 - Display
   - ```<Block />```
   - ```<Flex />```
+  - ```<None />```
 - Margin
   - ```<M1 />```
   - ```<Mx1 />```

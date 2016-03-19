@@ -4,7 +4,7 @@ import Position from './position'
 import Margin from './margin'
 import Text from './text'
 
-import makeElement from './makeElement'
+import makeElement from './utils'
 
 const elements = Object.assign(
   {},
@@ -17,5 +17,5 @@ const elements = Object.assign(
 )
 
 for(var key in elements) {
-  exports[key] = makeElement(key, elements[key])
+  exports[key] = makeElement(elements[key])
 }

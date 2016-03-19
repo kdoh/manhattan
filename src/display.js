@@ -1,6 +1,8 @@
-const Display = {
-  Block: { display: 'block' },
-  Flex: { display: 'flex' },
-}
+import { generateProperties } from './utils'
+
+const Display = generateProperties(
+  'display',
+  ['block', 'flex', 'none']
+)
 
 export default Display

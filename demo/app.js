@@ -6,7 +6,6 @@ import {
   Flex,
   M1,
   Mx1,
-  My1,
   Relative,
   TextLeft,
   TextCentered,

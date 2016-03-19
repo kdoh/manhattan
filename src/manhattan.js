@@ -16,6 +16,6 @@ const elements = Object.assign(
   {}
 )
 
-for(var key in elements) {
+for (var key in elements) {
   exports[key] = makeElement(elements[key])
 }

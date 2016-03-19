@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 
 const makeElement = (style) => class extends Component {
   render () {
@@ -12,10 +12,10 @@ export const toTitleCase = (str) =>
     txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
   )
 
-export const generateProperties = (propertyName, values) => {
-  let propertySet = {}
-  values.map((value) => propertySet[toTitleCase(value)] = { [propertyName]: value })
-  return propertySet
-}
+export const generateProperties = (propertyName, values) =>
+  values.reduce((object, value) => {
+    object[toTitleCase(value)] = { [propertyName]: value }
+    return object
+  }, {})
 
 export default makeElement

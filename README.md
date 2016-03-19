@@ -2,6 +2,7 @@
 Atomic react elements for styling and quick prototyping. This is probably a terrible idea.
 
 [![Build Status](https://travis-ci.org/kdoh/manhattan.svg?branch=master)](https://travis-ci.org/kdoh/manhattan)
+[![Code Climate](https://codeclimate.com/github/kdoh/manhattan/badges/gpa.svg)](https://codeclimate.com/github/kdoh/manhattan)
 
 ## install
 ```sh
@@ -113,6 +114,9 @@ But obviously this results in un-necessary DOM to achieve the equivelant class b
 
 # inspiration
 A lot of this is inspired by the work of [Brent Jackson](http://jxnblk.com/), [Adam Morse](http://mrmrs.cc/), and [Pete Hunt](https://twitter.com/floydophone) and their projects [basscss](https://github.com/basscss/basscss), [tachyons](https://github.com/tachyons-css/tachyons), and [jsxtyle](https://github.com/petehunt/jsxstyle) respectively.
+
+## hello yes I'm looking for more badges?
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 # why is it named Manhattan?
 Its a not so clever reference to the Manhattan project. (You probably already knew that)

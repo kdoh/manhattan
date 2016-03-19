@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Atomic react elements for quick prototyping. This is probably a terrible idea.",
   "scripts": {
-    "start": "node server.js"
+    "start": "NODE_ENV=development node server.js",
+    "test": "NODE_ENV=test mocha --require babel-core/register --recursive",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",

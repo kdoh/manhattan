@@ -1,7 +1,8 @@
-const Position = {
-  Absolute: { position: 'absolute' },
-  Fixed: { position: 'fixed'},
-  Relative: { position: 'relative' },
-}
+import { generateProperties } from './utils'
+
+const Position = generateProperties(
+  'position',
+  ['absolute', 'fixed', 'relative']
+)
 
 export default Position

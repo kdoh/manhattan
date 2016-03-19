@@ -4,7 +4,7 @@
   "description": "Atomic react elements for quick prototyping. This is probably a terrible idea.",
   "scripts": {
     "start": "NODE_ENV=development node server.js",
-    "test": "NODE_ENV=test mocha --require babel-core/register --recursive",
+    "test": "NODE_ENV=test mocha --require babel-core/register --recursive && standard",
     "test:watch": "npm run test -- --watch"
   },
   "repository": {
@@ -30,7 +30,11 @@
     "expect": "^1.15.2",
     "mocha": "^2.4.5",
     "portfinder": "^0.4.0",
+    "standard": "^6.0.8",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
+  },
+  "standard": {
+    "globals": [ "describe", "it", "React" ]
   }
 }

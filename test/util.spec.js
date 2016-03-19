@@ -1,10 +1,8 @@
-import React from 'react'
 import expect from 'expect'
 
 import { generateProperties, toTitleCase } from '../src/utils'
 
 describe('utils', () => {
-
   describe('toTitleCase', () => {
     it('should convert a string to title case', () =>
         expect(toTitleCase('down')).toEqual('Down')
@@ -16,9 +14,9 @@ describe('utils', () => {
       const values = ['block', 'flex', 'none']
       const propertyName = 'display'
       const expected = {
-        Block: { display: 'block'},
-        Flex:  { display: 'flex' },
-        None:  { display: 'none' },
+        Block: { display: 'block' },
+        Flex: { display: 'flex' },
+        None: { display: 'none' }
       }
       expect(generateProperties(propertyName, values)).toEqual(expected)
     })

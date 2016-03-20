@@ -1,7 +1,7 @@
-const Text = {
-  TextLeft: { textAlign: 'left' },
-  TextRight: { textAlign: 'right' },
-  TextCentered: { textAlign: 'center' }
-}
+import { generateProperties } from './utils'
 
-export default Text
+export default generateProperties(
+  'textAlign',
+  ['left', 'center', 'right', 'justify'],
+  'Text'
+)

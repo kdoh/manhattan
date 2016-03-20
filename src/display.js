@@ -1,8 +1,6 @@
 import { generateProperties } from './utils'
 
-const Display = generateProperties(
+export default generateProperties(
   'display',
   ['block', 'flex', 'none']
 )
-
-export default Display

@@ -12,9 +12,11 @@ export const toTitleCase = (str) =>
     txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
   )
 
-export const generateProperties = (propertyName, values) =>
+export const generateProperties = (propertyName, values, prefix) =>
   values.reduce((object, value) => {
-    object[toTitleCase(value)] = { [propertyName]: value }
+    let key = toTitleCase(value)
+    if (prefix) { key = `${prefix}${key}` }
+    object[key] = { [propertyName]: value }
     return object
   }, {})
 

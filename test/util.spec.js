@@ -20,5 +20,17 @@ describe('utils', () => {
       }
       expect(generateProperties(propertyName, values)).toEqual(expected)
     })
+
+    it('should add a prefix  to the property key if it exists', () => {
+      const values = ['left', 'center', 'right', 'justified']
+      const propertyName = 'textAlign'
+      const expected = {
+        TextLeft: { textAlign: 'left' },
+        TextCenter: { textAlign: 'center' },
+        TextRight: { textAlign: 'right' },
+        TextJustified: { textAlign: 'justified' }
+      }
+      expect(generateProperties(propertyName, values, 'Text')).toEqual(expected)
+    })
   })
 })

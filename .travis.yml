@@ -5,6 +5,9 @@ cache:
     - node_modules
 notifications:
   email: false
+env:
+  global:
+    - NODE_ENV=travisci
 node_js:
   - '5'
 before_install:

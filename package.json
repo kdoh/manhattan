@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development node server.js",
     "test": "NODE_ENV=test mocha --require babel-core/register --recursive && standard",
     "test:watch": "npm run test -- --watch",
-    "prepublish": "NODE_ENV=production mkdir -p dist && babel src --out-dir dist",
+    "build": "NODE_ENV=production mkdir -p dist && babel src --out-dir dist",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "main": "dist/manhattan.js",

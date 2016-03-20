@@ -1,12 +1,16 @@
 {
   "name": "react-manhattan",
-  "version": "0.0.1",
+  "version": "0.0.0-semantic-release",
   "description": "Atomic react elements for quick prototyping. This is probably a terrible idea.",
   "scripts": {
+    "commit": "git-cz",
     "start": "NODE_ENV=development node server.js",
     "test": "NODE_ENV=test mocha --require babel-core/register --recursive && standard",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "mkdir -p dist && babel src --out-dir dist",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "main": "dist/manhattan.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/kdoh/manhattan"
@@ -22,19 +26,32 @@
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
+    "babel-cli": "^6.6.5",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.3",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.0",
+    "commitizen": "^2.7.3",
+    "cz-conventional-changelog": "^1.1.5",
     "expect": "^1.15.2",
     "mocha": "^2.4.5",
     "portfinder": "^0.4.0",
+    "semantic-release": "^4.3.5",
     "standard": "^6.0.8",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   },
   "standard": {
-    "globals": [ "describe", "it", "React" ]
+    "globals": [
+      "describe",
+      "it",
+      "React"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

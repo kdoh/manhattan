@@ -1,4 +1,23 @@
+sudo: false
 language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '4'
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm prune
+script:
+  - npm run test
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
 addons:
   code_climate:
     repo_token: 64cedaed6749e1e493ac01cd50540282c16153ad8152a59fc3902036d99136f8

@@ -55,6 +55,12 @@ for clarity sometimes part of the css property is included like in the case of `
 ## props
 Manhattan components can also accept other styling props. These get merged with the originating styles. This is mostly for convenience. If you find yourself adding a ton of style properties to a Manhattan element then maybe reconsider using the element. Or not. It's your app, you do you.
 
+```js
+<Flex alignItems='center'>
+  <div>Heya</div>
+</Flex>
+```
+
 ## why?
 if you're familiar with atomic classnames in css, they help a ton with keeping your css maintainable and make quick prototyping without side effects really easy.
 

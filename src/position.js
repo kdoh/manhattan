@@ -1,8 +1,6 @@
 import { generateProperties } from './utils'
 
-const Position = generateProperties(
+export default generateProperties(
   'position',
   ['absolute', 'fixed', 'relative']
 )
-
-export default Position

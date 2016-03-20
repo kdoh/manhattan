@@ -8,8 +8,9 @@ import {
   Mx1,
   Relative,
   TextLeft,
-  TextCentered,
-  TextRight
+  TextCenter,
+  TextRight,
+  TextJustify
 } from '../src/manhattan'
 
 class App extends Component {
@@ -23,14 +24,15 @@ class App extends Component {
         <Block>
           <M1>
             <Flex>
-              <Mx1 flex={1}><TextCentered>Derp lerp</TextCentered></Mx1>
+              <Mx1 flex={1}><TextCenter>Derp lerp</TextCenter></Mx1>
               <Mx1 flexShrink={0}>merp</Mx1>
             </Flex>
           </M1>
         </Block>
         <TextLeft>Left</TextLeft>
-        <TextCentered>Centered</TextCentered>
+        <TextCenter>Centered</TextCenter>
         <TextRight>Right</TextRight>
+        <TextJustify>Lorem ipsum dolor sit amet</TextJustify>
         <Fixed bottom={0}>
           DERP
         </Fixed>

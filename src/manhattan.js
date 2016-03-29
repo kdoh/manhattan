@@ -1,5 +1,6 @@
 import Border from './border'
 import Display from './display'
+import Height from './height'
 import Position from './position'
 import Margin from './margin'
 import Text from './text'
@@ -10,6 +11,7 @@ const elements = Object.assign(
   {},
   Border,
   Display,
+  Height,
   Margin,
   Position,
   Text,

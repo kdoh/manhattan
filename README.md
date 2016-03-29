@@ -3,7 +3,9 @@ Atomic react elements for styling and quick prototyping. This is probably a terr
 
 [![Build Status](https://travis-ci.org/kdoh/manhattan.svg?branch=master)](https://travis-ci.org/kdoh/manhattan)
 [![Code Climate](https://codeclimate.com/github/kdoh/manhattan/badges/gpa.svg)](https://codeclimate.com/github/kdoh/manhattan)
+[![NPM Dependencies Status](https://david-dm.org/kdoh/manhattan.svg)](https://david-dm.org/kdoh/manhattan)
 [![npm version](https://badge.fury.io/js/manhattan.svg)](https://badge.fury.io/js/manhattan)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kdoh/manhattan/master/LICENSE)
 
 ## install
 ```sh

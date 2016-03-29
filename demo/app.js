@@ -10,13 +10,14 @@ import {
   TextLeft,
   TextCenter,
   TextRight,
-  TextJustify
+  TextJustify,
+  ViewportHeight
 } from '../src/manhattan'
 
 class App extends Component {
   render () {
     return (
-      <Block>
+      <ViewportHeight>
         <Relative>
           Sup
           <Absolute right={0} top={0}>Hey</Absolute>
@@ -36,7 +37,7 @@ class App extends Component {
         <Fixed bottom={0}>
           DERP
         </Fixed>
-      </Block>
+      </ViewportHeight>
     )
   }
 }

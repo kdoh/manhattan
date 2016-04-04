@@ -30,7 +30,7 @@ class App extends Component {
             </Flex>
           </M1>
         </Block>
-        <TextLeft>Left</TextLeft>
+        <TextLeft onClick={() => console.log('click click click')}>Left</TextLeft>
         <TextCenter>Centered</TextCenter>
         <TextRight>Right</TextRight>
         <TextJustify>Lorem ipsum dolor sit amet</TextJustify>

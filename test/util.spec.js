@@ -1,7 +1,7 @@
 import React from 'react'
 import expect from 'expect'
 import { shallow } from 'enzyme'
-import makeElement, { generateProperties, toTitleCase } from '../src/utils'
+import makeElement, { assignStyle, generateProperties, toTitleCase } from '../src/utils'
 
 describe('utils', () => {
   describe('makeElement', () => {
@@ -45,6 +45,26 @@ describe('utils', () => {
     it('should convert a string to title case', () =>
         expect(toTitleCase('down')).toEqual('Down')
     )
+  })
+
+  describe('assignStyle', () => {
+    it('should remove invalid keys from the style object', () => {
+      const propsObject = {
+        onClick: {},
+        onMouseEnter: {},
+        onMouseLeave: {},
+        children: {},
+        paddingLeft: '1em'
+      }
+      const style = {
+        display: 'block'
+      }
+      const expected = {
+        paddingLeft: '1em',
+        display: 'block'
+      }
+      expect(assignStyle(style, propsObject)).toEqual(expected)
+    })
   })
 
   describe('generateProperties', () => {

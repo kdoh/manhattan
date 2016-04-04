@@ -3,8 +3,18 @@ import React, { Component } from 'react'
 const makeElement = (style) => class extends Component {
   render () {
     const { children } = this.props
-    return <div style={Object.assign({}, style, this.props)}>{children}</div>
+    return <div {...this.props} style={assignStyle(style, this.props)}>{children}</div>
   }
+}
+
+export const assignStyle = (style, propsObject) => {
+  const excludeKeys = ['children', 'onClick', 'onMouseEnter', 'onMouseLeave']
+  let elementStyles = Object.assign({}, style, propsObject)
+
+  for (var key in excludeKeys) {
+    delete elementStyles[excludeKeys[key]]
+  }
+  return elementStyles
 }
 
 export const toTitleCase = (str) =>

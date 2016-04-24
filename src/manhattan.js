@@ -19,5 +19,7 @@ const elements = Object.assign(
 )
 
 for (var key in elements) {
-  exports[key] = makeElement(elements[key])
+  let element = makeElement(elements[key])
+  element.displayName = key
+  exports[key] = element
 }

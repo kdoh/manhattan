@@ -1,4 +1,6 @@
 # manhattan
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/kdoh/manhattan.svg)](https://greenkeeper.io/)
 Atomic react elements for styling and quick prototyping. This is probably a terrible idea.
 
 [![Build Status](https://travis-ci.org/kdoh/manhattan.svg?branch=master)](https://travis-ci.org/kdoh/manhattan)
